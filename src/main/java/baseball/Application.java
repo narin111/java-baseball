@@ -3,6 +3,7 @@ package baseball;
 import baseball.domain.Calculator;
 import baseball.domain.Judgment;
 import baseball.domain.NumberGenerator;
+import baseball.domain.Referee;
 
 import java.util.Arrays;
 import java.util.List;
@@ -27,8 +28,12 @@ public class Application {
 //        final int count = judgment.correctCount(Arrays.asList(1, 2, 3), Arrays.asList(1, 2, 3));
 //        System.out.println(count);
 
-        Judgment judgment = new Judgment();
-        final boolean place = judgment.hasPlace(Arrays.asList(7, 8, 9), 0, 7);
-        System.out.println(place);  // false
+//        Judgment judgment = new Judgment();
+//        final boolean place = judgment.hasPlace(Arrays.asList(7, 8, 9), 0, 7);
+//        System.out.println(place);  // false
+
+        final Referee referee = new Referee();
+        String result = referee.compare(Arrays.asList(1, 2, 3), Arrays.asList(1, 2, 3));
+        System.out.println(result);
     }
 }
